@@ -1,0 +1,179 @@
+/* Define CSS variables for consistent theming */
+:root {
+  --primary-color: #ff6347;
+  --secondary-color: #ffe5d5;
+  --bg-color: #fff9f5;
+  --text-color: #333;
+  --button-color: #ff4500;
+  --button-hover-color: #ff6347;
+  --card-bg-color: #fff;
+  --card-border-color: #ddd;
+}
+
+/* General Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+.off-white-bg {
+  background-color: var(--bg-color);
+  padding: 20px;
+}
+
+/* Header */
+h5 {
+  text-align: center;
+  color: var(--primary-color);
+  font-size: 2.5em;
+  margin-bottom: 40px;
+}
+
+/* Carousel */
+.carousel-container {
+  background-color: var(--secondary-color);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.carousel img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border: 2px solid var(--primary-color);
+  transition: transform 0.3s ease;
+}
+
+.carousel img:hover {
+  transform: scale(1.05);
+}
+
+.rounded-circle {
+  border-radius: 50%;
+  border: 2px solid var(--primary-color);
+}
+
+/* Section Titles */
+h3 {
+  color: var(--primary-color);
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 40px 0 20px;
+  text-align: center;
+}
+
+/* Top Restaurants */
+.carousel .carousel-item {
+  text-align: center;
+}
+
+.card {
+  background-color: var(--card-bg-color);
+  border: 1px solid var(--card-border-color);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card .card-img-top {
+  border-radius: 12px 12px 0 0;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.card-text {
+  color: var(--text-color);
+  font-size: 1em;
+}
+
+/* Buttons */
+button,
+.btn {
+  background-color: var(--button-color);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+.btn:hover {
+  background-color: var(--button-hover-color);
+}
+
+/* Dropdowns */
+.dropdown-menu {
+  background-color: var(--card-bg-color);
+  border: 1px solid var(--card-border-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+  font-size: 1em;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: var(--secondary-color);
+}
+
+/* Restaurant Cards */
+.slidebar-container {
+  background-color: var(--secondary-color);
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.card .rating {
+  margin-top: 10px;
+  color: #ffd700; /* Star color */
+}
+
+.card .btn {
+  margin-top: 10px;
+  width: 100%;
+}
+
+.mb-4 {
+  margin-bottom: 20px !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .carousel img {
+    max-width: 80%;
+    max-height: 150px;
+  }
+
+  .card .card-img-top {
+    height: 150px;
+  }
+
+  .card-title {
+    font-size: 1.2em;
+  }
+
+  .card-text {
+    font-size: 0.9em;
+  }
+}

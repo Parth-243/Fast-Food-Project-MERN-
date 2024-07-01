@@ -1,0 +1,31 @@
+/* MyraDetails.css */
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-title {
+    font-weight: bold;
+  }
+  
+  .card-text {
+    margin-bottom: 15px;
+  }
+  
+  .btn-primary {
+    background-color: #ff6f61;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #ff3d2e;
+  }
+  
+  .filter-container {
+    margin-bottom: 20px;
+  }
+  
+  .filter-container .dropdown-button {
+    margin-right: 10px;
+  }
+  

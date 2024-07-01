@@ -1,0 +1,132 @@
+/* src/BusinessPanel.css */
+.business-panel {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  background-color: #333;
+  padding: 10px 0;
+  color: #fff;
+}
+
+.nav-bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-bar li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.nav-bar li a:hover {
+  background-color: #444;
+  border-radius: 5px;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  background-color: #f4f4f4;
+  padding: 20px;
+  width: 220px;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar .sidebar-menu > li {
+  margin-bottom: 15px;
+}
+
+.sidebar .sidebar-heading {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.sidebar ul ul {
+  padding-left: 15px;
+}
+
+.sidebar li a {
+  display: block;
+  padding: 5px;
+  color: #333;
+  text-decoration: none;
+}
+
+.sidebar li a:hover {
+  background-color: #ddd;
+  border-radius: 5px;
+}
+
+.main-content {
+  padding: 20px;
+  flex: 1;
+  background-color: #fff;
+}
+
+.food-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+}
+
+.food-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.food-form input[type="text"],
+.food-form input[type="number"],
+.food-form textarea,
+.food-form select,
+.food-form input[type="file"] {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.food-form input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.checkbox-group {
+  display: flex;
+  gap: 10px;
+}
+
+.food-form button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.food-form button:hover {
+  background-color: #444;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
